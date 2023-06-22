@@ -49,8 +49,9 @@
   <body>
     
     <header
-    class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
-  ><img class="bd-placeholder-img" src="/img/bootstrap-logo-shadow.png" alt="">
+    class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0 shadow"
+  >
+  <img class="bd-placeholder-img" src="/img/bootstrap-logo-shadow.png" alt="">
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"
       >SkyNote tech</a
     >
@@ -68,13 +69,23 @@
     <input
       class="form-control form-control-dark w-100"
       type="text"
-      placeholder="Search"
+      placeholder="Tape quelque chose ici pour rechercher"
       aria-label="Search"
     />
     <div class="navbar-nav">
-      <div class="nav-item text-nowrap">
+      <div class="nav-item text-nowrap d-flex">
+        
+        <img src="img/bootstrap-logo-shadow.png" width="50" style="border-radius: 50%;" alt="">
         <a class="nav-link px-3" style="color: white" href="#">Sign out</a>
+        <div class="dropdown">
+          <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
       </div>
+      
+       
+     
     </div>
   </header>
 
@@ -156,11 +167,12 @@
               <i class="fa-solid fa-calendar"></i>
               This week
             </button>
+            
           </div>
         </div>
   
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-success btn-md mb-2" data-bs-toggle="modal" data-bs-target="#modalId">
+  <button type="button" class="btn btn-primary btn-md mb-2" data-bs-toggle="modal" data-bs-target="#modalId">
     Ajouter données
   </button>
   
@@ -183,13 +195,11 @@
        </div>
      </div>
    </div>
-  </div>
-  
-
+  </div> 
    <div class="card">
      
      <div class="card-header bg-primary">
-       <h2 class="text-center ">Liste des données</h2>
+       <h4 class="text-center" >Liste des données</h4>
      </div>
      <div class="card-body">
        <div class="table-responsive">
@@ -201,6 +211,7 @@
                <th scope="col">Header</th>
                <th scope="col">Header</th>
                <th scope="col">Header</th>
+               <th scope="col" class="text-center">Action</th>
              </tr>
            </thead>
            <tbody>
@@ -210,6 +221,11 @@
                <td>data</td>
                <td>placeholder</td>
                <td>text</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                 <a href="" style="color: red;"><i class="fas
+                 fa-trash"></i></a>&nbsp;&nbsp;
+                 <a href="" ><i class="fas fa-eye"></i></a>
+               </td>
              </tr>
              <tr>
                <td>1,002</td>
@@ -217,6 +233,11 @@
                <td>irrelevant</td>
                <td>visual</td>
                <td>layout</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,003</td>
@@ -224,6 +245,11 @@
                <td>rich</td>
                <td>dashboard</td>
                <td>tabular</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,003</td>
@@ -231,6 +257,11 @@
                <td>placeholder</td>
                <td>illustrative</td>
                <td>data</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,004</td>
@@ -238,6 +269,11 @@
                <td>random</td>
                <td>layout</td>
                <td>dashboard</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,005</td>
@@ -245,6 +281,11 @@
                <td>irrelevant</td>
                <td>text</td>
                <td>placeholder</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,006</td>
@@ -252,6 +293,11 @@
                <td>illustrative</td>
                <td>rich</td>
                <td>data</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,007</td>
@@ -259,6 +305,11 @@
                <td>tabular</td>
                <td>information</td>
                <td>irrelevant</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,008</td>
@@ -266,6 +317,11 @@
                <td>data</td>
                <td>placeholder</td>
                <td>text</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,009</td>
@@ -273,6 +329,11 @@
                <td>irrelevant</td>
                <td>visual</td>
                <td>layout</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,010</td>
@@ -280,6 +341,11 @@
                <td>rich</td>
                <td>dashboard</td>
                <td>tabular</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,011</td>
@@ -287,6 +353,11 @@
                <td>placeholder</td>
                <td>illustrative</td>
                <td>data</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,012</td>
@@ -294,6 +365,11 @@
                <td>placeholder</td>
                <td>layout</td>
                <td>dashboard</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,013</td>
@@ -301,6 +377,11 @@
                <td>irrelevant</td>
                <td>text</td>
                <td>visual</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,014</td>
@@ -308,6 +389,11 @@
                <td>illustrative</td>
                <td>rich</td>
                <td>data</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
              <tr>
                <td>1,015</td>
@@ -315,6 +401,11 @@
                <td>tabular</td>
                <td>information</td>
                <td>text</td>
+               <td class="text-center">    <a href="" style="color: green;"><i class="fa fa-pen-alt"></i></a>&nbsp;&nbsp;
+                <a href="" style="color: red;"><i class="fas
+                fa-trash"></i></a>&nbsp;&nbsp;
+                <a href="" ><i class="fas fa-eye"></i></a>
+              </td>
              </tr>
            </tbody>
          </table>
