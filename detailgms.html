@@ -166,30 +166,84 @@ font-family: 'Playfair', serif;
           </div>
         </div> 
       <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-md mb-2" data-bs-toggle="modal" data-bs-target="#modalId">
-    Ajouter données
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-   <div class="modal-dialog" role="document">
-     <div class="modal-content">
-         <div class="modal-header">
-             <h5 class="modal-title" id="modalTitleId">Modal title</h5>
-                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-           </div>
-       <div class="modal-body">
-         <div class="container-fluid">
-           Add rows here
-         </div>
-       </div>
-       <div class="modal-footer">
-         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-         <button type="button" class="btn btn-primary">Save</button>
-       </div>
-     </div>
-   </div>
-  </div> 
+      <button type="button" class="btn btn-info btn-md mb-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg">Large Modal</button>
+      <div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title text-center" id="myLargeModalLabel">Large modal</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                  </div>
+                  <div class="modal-body">
+                      <form> 
+                        <div class="row mb-2">
+                          <div class="col-md-3"> 
+                            <label for="num">Num</label>
+                            <input type="number" class="form-control" id="num" name="">
+                          </div>
+                          <div class="col-md-3">
+                            <label for="nif">Nif</label>
+                            <input type="text" name="" id="nif" placeholder="ex :A7777A " class="form-control"> 
+                          </div>
+                          <div class="col-md-3">
+                            <label for="num operation">num operation</label>
+                            <input type="number" name="" min="0" id="" class="form-control"> 
+                          </div>
+                          <div class="col-md-3">
+                            <label for="">Num CLient</label>
+                            <input type="number" name="" min="0" id="" class="form-control"> 
+                          </div>
+                        </div>
+                        <div class="row mb-2">
+                          <div class="col-md-3"> 
+                            <label for="num">Nif client</label>
+                            <input type="text" class="form-control" id="num" name="">
+                          </div>
+                          <div class="col-md-3">
+                            <label for="nif">Num Fac Decla</label>
+                            <input type="text" name="" id="nif" placeholder="" class="form-control"> 
+                          </div>
+                          <div class="col-md-3">
+                            <label for="num operation">Date transaction</label>
+                            <input type="date" name="" id="" class="form-control"> 
+                          </div>
+                          <div class="col-md-3">
+                            <label for="">Montant tva </label>
+                            <input type="number" name="" min="0" id="" class="form-control"> 
+                          </div>
+                        </div>
+                        <div class="row mb-2">
+                          <div class="col-md-3 mb-2"> 
+                            <label for="num">Code devise</label>
+                            <input type="number" class="form-control" id="num" name="">
+                          </div>
+                          <div class="col-md-2">
+                            <label for="">Annee</label>
+                            <input type="year" name="" id="nif" placeholder="" class="form-control"> 
+                          </div>
+                          <div class="col-md-2">
+                            <label for="num operation">code Mois</label>
+                            <input type="number" name="" min="0" id="" class="form-control"> 
+                          </div>
+                          <div class="col-md-2">
+                            <label for="num operation">type</label>
+                            <input type="number" name="" min="0" id="" class="form-control"> 
+                          </div>
+                          <div class="col-md-3">
+                            <label for="">Date saisie</label>
+                            <input type="date" name="" min="0" id="" class="form-control"> 
+                          </div>
+      
+                        </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+      </div>
    <div class="card">
      
      <div class="card-header bg-primary">
